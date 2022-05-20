@@ -1,0 +1,27 @@
+//
+// Created by yehud on 20/05/2022.
+//
+
+#ifndef HW8_STACK_H
+#define HW8_STACK_H
+
+//-------------------------------------------------------
+//  class stack
+//  abstract class - simply defines protocol for
+//  stack operations
+//-------------------------------------------------------
+
+class Stack
+{
+public:
+    virtual void clear() = 0;
+    virtual bool isEmpty() const = 0;
+    virtual int pop() = 0;
+    virtual void push(int value) = 0;
+    virtual int top() const = 0;
+    //virtul ~ Stack() {}; //מומלץ
+
+};
+
+
+#endif //HW8_STACK_H
